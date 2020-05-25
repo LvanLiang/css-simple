@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        属性                      作用            值
+        1. background-color      背景颜色 
+        2. background-image      背景图片
+        3. background-repat      是否平铺         repeat/no-repeat/repeat-x/repeat-y
+        4. background-position   背景位置         length/position 分别是x和y坐标
+        5. background-attachment 背景附着         croll(背景滚动)/fiexd(背景固定)
+        6. 背景简写               书写更简单       背景颜色 背景图片地址 背景平铺 背景滚动 背景位置
+        7. 背景色半透明           背景颜色班透明    background:rgb(0,0,0,0.3)；后面必须是4个值
+
+        说明：背景图片实际开发常见于logo或者一些装饰性的小图片或者超大背景的图片，优点是非常便于控制位置（精灵图也是一种运用场景）
+        */
+        #decorate h3 {
+            width: 118px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 40px;
+            background-image: url(images/icon.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            text-indent: 1.5em;
+        }
+
+        #position {
+            width: 300px;
+            height: 300px;
+            background-color: #FFC0CB;
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            background-position: 20px center;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div id="decorate">    
+        <h3>成长守护平台</h3>
+    </div>
+
+    <div id="position">
+        背景位置测试
+    </div>
+
+    <div class="attach">
+
+    </div>
+
+
+</body>
+</html>

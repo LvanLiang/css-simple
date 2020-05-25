@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 单行文字垂直居中：height和line-height相同 */
+
+        /* 元素显示模式 
+        元素模式      元素排列                设置样式               默认宽度           包含
+        块级元素      一行只能放一个块级元素   可以甚至恶高度和宽度    容器的100%         容器级可以包含任何标签
+        行内元素      一行可以放多个行内元素   不可以设置宽度和高度    它本身容器的宽度    容纳文本或者其他行内元素
+        行内块元素    一行放多个行内块元素     可以设置宽度和高度      它本身内容的宽度        
+        */
+
+        /*
+         转换为块元素：display:block;
+         转换为行内元素：display:inline;
+         转换为行内块：display: inline-block; 
+        */
+
+        /* 行内元素转为行内块元素，可以设置宽高 */
+        .span span {
+            width: 500px;
+            height: 200px;
+            background-color: #e93030;
+            display: inline-block;
+        }
+
+        /* 行内元素转换为块元素 */
+        div a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            background-color: #55585A;
+            color: #ffffff;
+            text-indent: 2em;
+            text-decoration: none;
+            line-height: 40px;
+        }
+
+        /* 鼠标经过链接变换背景颜色 */
+        div a:hover {
+            background-color: #FF6700;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="inlne">
+        <span>第一个行内元素</span>
+        <span>第二个行内元素</span>
+    </div>
+
+    <div class="span">
+        <span>行内元素</span>
+        <span>行内元素</span>
+    </div>
+
+    <div>
+        <a href="#">手机 电话卡</a>
+        <a href="#">电视 盒子</a>
+        <a href="#">笔记本 平板</a>
+        <a href="#">出行 穿戴</a>
+        <a href="#">智能 路由器</a>
+        <a href="#">健康 儿童</a>
+        <a href="#">耳机 音响</a>
+    </div>
+</body>
+</html>
