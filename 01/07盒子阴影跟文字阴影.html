@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阴影</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        /* 盒子阴影
+            box-shadow: h-shadow v-shadow blur spread color inset; 
+        */
+        #box:hover {
+            box-shadow: 40px 20px 5px 5px rgba(0, 0, 0, .3);
+        }
+
+
+        .shadowFont {
+            font-size: 50px;
+            color: orangered;
+            font-weight: 700;
+            text-shadow: 5px 5px 6px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+    <div id="box">盒子阴影</div>
+
+    <div class="shadowFont">
+        你是阴影,我是火影
+    </div>
+</body>
+</html>

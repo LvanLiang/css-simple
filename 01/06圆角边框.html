@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+
+        .one {
+            width: 300px;
+            height: 150px;
+            background-color: #ffc0cb;
+            border-radius: 10px;
+        }
+
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: #ffc0cb;
+            border-radius: 100px;
+            /* 调整文字上下左右居中 */
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .three {
+            width: 300px;
+            height: 100px;
+            background-color: #ffc0cb;
+             /* 圆角矩形设置为高度的一半 */
+            border-radius: 50px;
+            /* 调整文字上下左右居中 */
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .radius {
+            width: 200px;
+            height: 200px;
+            background-color: #ffc0cb;
+            /* border-top-left-radius: 20px; */
+            border-radius: 10px 40px;
+             /* 调整文字上下左右居中 */
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+
+
+    <div class="two">圆形做法</div>
+
+
+    <div class="three">圆角矩形的做法</div>
+
+
+    <div class="radius">可以设置不同的圆角</div>
+</body>
+</html>
