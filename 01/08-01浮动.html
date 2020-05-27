@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+         /* 
+         任何元素都可以浮动。不管原先是什么模式的元素，添加浮动之后具有行内块元素相似的特性。
+         如果行内元素有了浮动,则不需要转换块级\行内块元素就可以直接给高度和宽度 
+          */
+          * {
+            margin: 0;
+            padding: 0;
+          }
+
+          #div {
+            width: 1226px;
+            height: 285px;
+            background-color: pink;
+            margin: 0 auto;
+          }
+          
+          .box li {
+            list-style: none;
+            width: 296px;
+            height: 285px;
+            background-color: purple;
+            float: left;
+            margin-right: 14px;
+          }
+
+           /* 这里必须写 .box .last 要注意权重的问题  20 */
+          .box .last {
+              margin-right: 0;
+          }
+
+    </style>
+</head>
+<body>
+    <div id="div">
+      <ul class="box">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li class="last">4</li>
+      </ul>
+    </div>
+</body>
+</html>
